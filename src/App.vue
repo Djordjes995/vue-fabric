@@ -168,6 +168,7 @@
       elementDeslected() {
         this.activeObject = null;
         this.text = "";
+        this.zoom ="x1"
       },
     },
     computed: {
