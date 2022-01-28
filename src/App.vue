@@ -160,7 +160,9 @@
       objectResize(obj) {
         //forgive me for using setTimeout here :)
         setTimeout(() => {
-          this.zoom = `${"x" + Math.round(obj.target.zoomY * 100) / 100}`;
+          this.zoom = `${
+            "x" + Math.round((obj.target.zoomY + Number.EPSILON) * 100) / 100
+          }`;
         }, 200);
       },
       elementDeslected() {
